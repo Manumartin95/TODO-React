@@ -12,7 +12,7 @@ export const TodoListItem: React.FC<Props> = ({todo, toggleTodo, deleteTodoItem}
     return (
     <li>
         <input type="checkbox" 
-        checked={todo.complete} 
+        defaultChecked={todo.complete} 
         onClick={() => toggleTodo(todo)}/>        
         
         <span style={{margin: '1rem', textDecoration: todo.complete ? 'line-through': ''}}>{todo.task}</span>
